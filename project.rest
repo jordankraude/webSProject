@@ -9,10 +9,10 @@ GET https://web-services-mdu8.onrender.com/store
 
 
 ###
-POST https://web-services-mdu8.onrender.com/store HTTP/1.1
+POST http://localhost:8000/store HTTP/1.1
 content-type:application/json
 
-{"firstName":"billy", "lastName":"bob", "email":"billybob@gmail.com", "favoriteColor":"Blue", "birthday":"01/01/2000"}
+{"itemName": "curry blocks", "itemCost": "5.99", "itemQuanityInStock": "56", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###
