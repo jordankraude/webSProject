@@ -5,7 +5,7 @@ const doc = {
     title: 'My API',
     description: 'Store Api'
   },
-  host: 'web-services-mdu8.onrender.com',
+  host: 'https://storeproject.onrender.com',
   schemes: ['https']
 };
 
