@@ -16,13 +16,13 @@ content-type:application/json
 
 
 ###
-PUT https://web-services-mdu8.onrender.com/store/6455489c79adf4d1f6953375 HTTP/1.1
+PUT https://web-services-mdu8.onrender.com/store/64698724263bdd00beb2e1f7 HTTP/1.1
 content-type: application/json
 
 {"itemName": "curry blocks", "itemCost": "5.99", "itemQuanityInStock": "6", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 ###
-DELETE https://web-services-mdu8.onrender.com/store/6455489c79adf4d1f6953375 HTTP/1.1
+DELETE https://web-services-mdu8.onrender.com/store/64698724263bdd00beb2e1f7 HTTP/1.1
 
 ###
 https://web-services-mdu8.onrender.com/api-docs
