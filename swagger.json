@@ -5,7 +5,7 @@
     "description": "Store Api",
     "version": "1.0.0"
   },
-  "host": "https://storeproject.onrender.com",
+  "host": "storeproject.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
