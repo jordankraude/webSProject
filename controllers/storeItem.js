@@ -24,7 +24,7 @@ const createNewStoreItem = async (req, res, next) => {
   const storeItem = {
     itemName: req.body.itemName,
     itemCost: req.body.itemCost,
-    itemQuanityInStock: req.body.itemQuanityInStock,
+    itemQuantityInStock: req.body.itemQuantityInStock,
     vendorID: req.body.vendorID,
     vendorLocation: req.body.vendorLocation,
     itemImagePath: req.body.itemImagePath,

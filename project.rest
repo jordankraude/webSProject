@@ -12,7 +12,7 @@ GET https://web-services-mdu8.onrender.com/store
 POST http://localhost:8000/store HTTP/1.1
 content-type:application/json
 
-{"itemName": "curry blocks", "itemCost": "5.99", "itemQuanityInStock": "56", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "curry blocks", "itemCost": "5.99", "itemQuantityInStock": "100", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###
