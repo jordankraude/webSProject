@@ -1,36 +1,54 @@
 ###
 GET http://localhost:8000/store
 
-###
-GET http://localhost:8000/store/
 
 ###
-GET https://web-services-mdu8.onrender.com/store
+GET http://localhost:8000/store/64712cbeabd05a3be5fa49c1
 
 
 ###
 POST http://localhost:8000/store HTTP/1.1
 content-type:application/json
 
-{"itemName": "curry blocks", "itemCost": "5.99", "itemQuantityInStock": "100", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "curry Blocks", "itemCost": "6.99", "itemQuanityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###
-PUT https://web-services-mdu8.onrender.com/store/646d85a21b7ae3bb34e87148 HTTP/1.1
+PUT http://localhost:8000/store/64712f76abd05a3be5fa49c2
 content-type: application/json
 
-{"itemName": "curry blocks", "itemCost": "5.99", "itemQuanityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "Curry Blocks", "itemCost": "7.99", "itemQuanityInStock": "500", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+
 
 ###
-DELETE https://web-services-mdu8.onrender.com/store/64698724263bdd00beb2e1f7 HTTP/1.1
+DELETE http://localhost:8000/store/64712f76abd05a3be5fa49c2
+
+
+
+
+
+
+
+###
+GET https://web-services-mdu8.onrender.com/store
+
+
+###
+POST https://web-services-mdu8.onrender.com/store
+content-type:application/json
+
+{"itemName": "curry blocks", "itemCost": "5.99", "itemQuantityInStock": "100", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+
+###
+PUT https://web-services-mdu8.onrender.com/store/646d82d76ade063b44f94af4 HTTP/1.1
+content-type: application/json
+
+{"itemName": "curry blocks", "itemCost": "5.99", "itemQuantityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+
+###
+DELETE https://web-services-mdu8.onrender.com/store/646d82d76ade063b44f94af4 HTTP/1.1
 
 ###
 https://web-services-mdu8.onrender.com/api-docs
 
 ###
-
-PUT http://localhost:8000/store/646d85a21b7ae3bb34e87148
-content-type: application/json
-
-{"itemName": "curry blocks", "itemCost": "5.99", "itemQuantityInStock": "300", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
-
