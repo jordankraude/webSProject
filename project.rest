@@ -10,14 +10,14 @@ GET http://localhost:8000/store/64712cbeabd05a3be5fa49c1
 POST http://localhost:8000/store HTTP/1.1
 content-type:application/json
 
-{"itemName": "curry Blocks", "itemCost": "6.99", "itemQuanityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "curry Blocks", "itemCost": "6.99", "itemQuantityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###
 PUT http://localhost:8000/store/64712f76abd05a3be5fa49c2
 content-type: application/json
 
-{"itemName": "Curry Blocks", "itemCost": "7.99", "itemQuanityInStock": "500", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "Curry Blocks", "itemCost": "7.99", "itemQuantityInStock": "500", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###

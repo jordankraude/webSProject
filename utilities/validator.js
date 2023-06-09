@@ -1,4 +1,4 @@
-const {body, validationResult} = require("express-validator");
+const {body, validationResult, url} = require("express-validator");
 
 
 const contactRules = () => {
@@ -10,6 +10,12 @@ const contactRules = () => {
         body("vendorLocation").trim().escape().isLength({min:1}).withMessage("Error, Vendor Location is required."),
         body("itemImagePath").trim().escape().isLength({min:1}).withMessage("Error, Item Image path is required."),
         body("itemAlt").trim().escape().isLength({min:1}).withMessage("Error, Item Description is required."),
+    ]
+}
+
+const idRules = (urlOfId) => {
+    return [
+        url.isURL(urlOfId, )
     ]
 }
 
@@ -27,4 +33,4 @@ const contactsValidator = (req, res, next) => {
 
 }
 
-module.exports = {contactRules, contactsValidator}
+module.exports = {contactRules, contactsValidator, idRules}
