@@ -3,7 +3,7 @@ GET http://localhost:8000/store
 
 
 ###
-GET http://localhost:8000/store/64712cbeabd05a3be5fa49c1
+GET http://localhost:8000/store/64712c98abd05a3be5fa49c0
 
 
 ###
@@ -14,7 +14,7 @@ content-type:application/json
 
 
 ###
-PUT http://localhost:8000/store/64712f76abd05a3be5fa49c2
+PUT http://localhost:8000/store/64712c98abd05a3be5fa49c0
 content-type: application/json
 
 {"itemName": "Curry Blocks", "itemCost": "7.99", "itemQuantityInStock": "500", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
