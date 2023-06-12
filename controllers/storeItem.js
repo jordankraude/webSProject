@@ -103,6 +103,9 @@ catch(error) {
 
 const updateStoreItem = async (req, res, next) => {
   try{
+    if (!req.body.itemName || !req.body.itemCost || !req.body.itemQuantityInStock || !req.body.vendorID || !req.body.vendorLocation || !req.body.itemImagePath || !req.body.itemAlt){
+      throw new Error("Empty Content")
+    }
     const storeItem = {
         itemName: req.body.itemName,
         itemCost: req.body.itemCost,
