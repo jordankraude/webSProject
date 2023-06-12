@@ -1,4 +1,4 @@
-const {body, validationResult, url} = require("express-validator");
+const {body, validationResult, param} = require("express-validator");
 
 
 const contactRules = () => {
@@ -13,9 +13,9 @@ const contactRules = () => {
     ]
 }
 
-const idRules = (urlOfId) => {
+const idRules = () => {
     return [
-        url.isURL(urlOfId, )
+        param("/:id").isLength(24)
     ]
 }
 
