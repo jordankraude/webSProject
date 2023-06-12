@@ -21,15 +21,59 @@
     "/store/": {
       "get": {
         "description": "",
-        "parameters": [],
-        "responses": {}
-      },
-      "post": {
-        "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [],
         "responses": {
           "200": {
             "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "itemName": {
+                  "example": "any"
+                },
+                "itemCost": {
+                  "example": "any"
+                },
+                "itemQuantityInStock": {
+                  "example": "any"
+                },
+                "vendorID": {
+                  "example": "any"
+                },
+                "vendorLocation": {
+                  "example": "any"
+                },
+                "itemImagePath": {
+                  "example": "any"
+                },
+                "itemAlt": {
+                  "example": "any"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       }
@@ -37,6 +81,9 @@
     "/store/{id}": {
       "get": {
         "description": "",
+        "produces": [
+          "application/json"
+        ],
         "parameters": [
           {
             "name": "id",
@@ -45,7 +92,14 @@
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       },
       "put": {
         "description": "",
@@ -55,11 +109,44 @@
             "in": "path",
             "required": true,
             "type": "string"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "itemName": {
+                  "example": "any"
+                },
+                "itemCost": {
+                  "example": "any"
+                },
+                "itemQuantityInStock": {
+                  "example": "any"
+                },
+                "vendorID": {
+                  "example": "any"
+                },
+                "vendorLocation": {
+                  "example": "any"
+                },
+                "itemImagePath": {
+                  "example": "any"
+                },
+                "itemAlt": {
+                  "example": "any"
+                }
+              }
+            }
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -73,7 +160,14 @@
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
       }
     }
   }
