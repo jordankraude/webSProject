@@ -6,8 +6,8 @@ const contactsController = require('../controllers/storeItem');
 
 router.get('/',  contactsController.getAll);
 router.get('/:id',  contactsController.getOne);
-router.post('/', contactRules(), contactsValidator, contactsController.createNewStoreItem);
-router.put('/:id', contactRules(), contactsValidator, contactsController.updateStoreItem);
+router.post('/', contactsController.createNewStoreItem);
+router.put('/:id', contactsController.updateStoreItem);
 router.delete('/:id', contactsController.deleteStoreItem);
 
 // 
