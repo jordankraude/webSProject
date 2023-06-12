@@ -23,7 +23,7 @@ const getOne = async (req, res, next) => {
   try {
 
     const userId = new UserId (req.params.id)
-    if (!userId.isValid(req.params.id)) {
+    if (!UserId.isValid(req.params.id)) {
       throw new Error("Invalid ID")
      }
     const result = await mongodb.getDb().db('project').collection('storeItems').find({_id: userId});
@@ -84,7 +84,7 @@ const updateStoreItem = async (req, res, next) => {
         itemAlt: req.body.itemAlt}
 
   const userId = new UserId (req.params.id)
-  if (!userId.isValid(req.params.id)) {
+  if (!UserId.isValid(req.params.id)) {
     throw new Error("Invalid ID")
     }
 
@@ -109,7 +109,7 @@ const updateStoreItem = async (req, res, next) => {
   const deleteStoreItem = async (req, res, next) => {
     try{
     const userId = new UserId(req.params.id);
-    if (!userId.isValid(req.params.id)) {
+    if (!UserId.isValid(req.params.id)) {
       throw new Error("Invalid ID")
      }
     const result = await mongodb.getDb().db('project').collection('storeItems').deleteOne({ _id: userId }, true);
