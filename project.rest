@@ -10,7 +10,7 @@ GET http://localhost:8000/store/64712c98abd05a3be5fa49c0
 POST http://localhost:8000/store HTTP/1.1
 content-type:application/json
 
-{"itemName": "curry Blocks", "itemCost": "6.99", "itemQuantityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
+{"itemName": "Curry Blocks", "itemCost": "6.99", "itemQuantityInStock": "200", "vendorID": "JP011", "vendorLocation": "Tokyo, Japan", "itemImagePath": "...", "itemAlt": "curry blocks"}
 
 
 ###
